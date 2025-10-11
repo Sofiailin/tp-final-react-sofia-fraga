@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import Navbar from './Componentes/Navbar'
 
 
 function App() {
@@ -29,6 +30,8 @@ function App() {
   }, [])
 
   return (
+    <>
+    <Navbar />
     <div className="App">
       <h1> Pokedex </h1>
 
@@ -44,7 +47,8 @@ function App() {
           } )
         }
 
-      </div>)
+      </div>
+      </>)
 }
 
 export default App
