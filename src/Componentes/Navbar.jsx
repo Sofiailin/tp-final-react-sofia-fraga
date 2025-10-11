@@ -1,6 +1,5 @@
-import { useState, useEffect } from "react";
 import { Logo } from "./Iconcs";
-import '../Componentes/Navbar.css'
+import '../App.css'
 
 const Navbar = () => {
 
