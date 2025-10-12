@@ -1,3 +1,12 @@
+:root {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 
+    'Open Sans', 'Helvetica Neue', sans-serif;
+    --color : #FF0000;
+    --color2 : #CC0000;
+    --color3 : #3B4CCA;
+    --color4 : #FFDE00;
+    --color5 : #B3A125;
+}
 
 /* Navbar styles */
 
@@ -13,40 +22,6 @@ nav {
 nav svg {
   height: 3rem;
   width: auto;
-}
-
-.switch {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.switch svg {
-  height: 1.5rem;
-  width: auto;
-}
-
-.switch label {
-  background-color: #ccc;
-  width: 4rem;
-  height: 1.5rem;
-  border-radius: 1rem;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  padding: 2px;
-}
-
-.slider {
-  width: 1.5rem;
-  height: 1.5rem;
-  border-radius: 1.5rem;
-  background-color: #fff;
-  transition: 0.2s;
-}
-
-.check-switch:checked .slider {
-  transform: translateX(2.5rem);
 }
 
 /* Buscador styles */
@@ -69,11 +44,11 @@ nav svg {
 .input-buscar {
   background-color: var(--card);
   color: var(--text);
-  border: 1px solid #ddd;
+  border: 4px solid #ddd;
   border-radius: 10px;
-  padding: 12px;
+  padding: 18px;
   flex: .4;
-  font-size: 16px;
+  font-size: 18px;
   box-shadow: 4px 4px 16px #00000020;
 }
 
@@ -81,20 +56,20 @@ nav svg {
   background-color: var(--color2);
   color: #f2f2f2;
   border-radius: 10px;
-  padding: 12px;
+  padding: 6px;
   border: none;
   box-shadow: 4px 4px 16px #00000020;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  gap: 5px;
-  font-size: 16px;
+  gap: 3px;
+  font-size: 18px;
   transition: 0.2s;
 }
 
 .btn-buscar svg {
-  width: 18px;
+  width: 14px;
   fill: #f2f2f2;
 }
 
@@ -105,4 +80,51 @@ nav svg {
 
 .btn-buscar:focus {
   border: none;
+}
+
+/* Pokemones styles */
+
+.pokemon-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 15px;
+  padding: 10px;
+  max-width: 1200px;
+  margin: 1rem auto;
+}
+
+.pokemon-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+  background-color: ;
+  padding: 5px 0;
+  box-shadow: 4px 4px 4px #21212120;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.pokemon-card:hover {
+  transform: scale(1.01);
+  box-shadow:0 0 15px 0 #21212170;
+}
+
+.pokemon-imagen {
+  width: 150px;
+  height: 150px;
+  margin: 5px 0;
+}
+
+.pokemon-titulo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #454A54;
+  color: #eee;
+  font-weight: 600;
+  text-transform: capitalize;
+  padding: 4px 8px;
+  border-radius: 10px;
+  width: 50%;
 }
