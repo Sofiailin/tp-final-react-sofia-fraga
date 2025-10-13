@@ -1,9 +1,13 @@
-
 import '../App.css'
 import usePokemones from '../Hooks/usePokemones'
+import Navbar from "../Componentes/Navbar";
+
+
+
 
 function Pokemon({ id, nombre, imagen }) {
   return (
+     <>
     <div className='pokemon-card'>
       <img src={imagen} alt={nombre} className='pokemon-imagen' />
       <p className='pokemon-titulo'>
@@ -11,6 +15,7 @@ function Pokemon({ id, nombre, imagen }) {
         <span>{nombre}</span>
       </p>
     </div>
+    </>
   )
 }
 
