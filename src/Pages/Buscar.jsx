@@ -5,10 +5,10 @@ import Buscador from '../Componentes/Buscador';
 
 function Buscar() {
   return (
-    <> 
-    <Navbar />
-    <Buscador />
-    <Footer />  
+    <>
+      <Navbar />
+      <Buscador />
+      <Footer />
     </>
   )
 }

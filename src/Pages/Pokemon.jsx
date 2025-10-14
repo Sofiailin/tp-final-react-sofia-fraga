@@ -6,12 +6,12 @@ import Pokemones from '../Componentes/Pokemones';
 
 function Pokemon() {
   return (
-    <> 
-    <Navbar />
-    <h1>¡Bienvenid@ a la Pokédex de la Dra. Sofi!</h1>
-    <Pokemones/>
-    
-    <Footer />    
+    <>
+      <Navbar />
+      <h1>¡Aqui tendrás todos los Pokemon juntos para poder apreciarlos!</h1>
+      <h2>Clickea en cada uno para ver más informacion</h2>
+      <Pokemones />
+      <Footer />
     </>
   )
 }
