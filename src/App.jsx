@@ -2,10 +2,8 @@ import './App.css'
 import './index.css'
 import { Routes, Route, BrowserRouter} from 'react-router-dom'
 import Inicio from './Pages/Inicio';
-import Pokemones from './Pages/Pokemones';
-import PokemonInfo from './Pages/PokemonInfo';
-import Buscador from './Componentes/Buscador';
-import Navbar from './Componentes/Navbar';
+import Pokemon from './Pages/Pokemon';
+import Buscar from './Pages/Buscar';
 
 
 function App() {
@@ -17,8 +15,8 @@ function App() {
       <Routes>
         <Route path='/' element={<Inicio />}/>
         <Route path='/Inicio' element={<Inicio />}/>
-        <Route path='/Pokemones' element={<Pokemones />}/>
-        <Route path='/PokemonInfo' element={<PokemonInfo />}/>
+        <Route path='/Pokemones' element={<Pokemon />}/>
+        <Route path='/Buscar' element={<Buscar />}/>
       </Routes>
       </BrowserRouter>
     </div>

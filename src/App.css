@@ -6,6 +6,7 @@
     --color3 : #3B4CCA;
     --color4 : #FFDE00;
     --color5 : #B3A125;
+    
 }
 
 /* Navbar styles */
@@ -24,7 +25,22 @@ nav svg {
   width: auto;
 }
 
-/* Buscador styles */
+.nav-item {
+  display: inline-block; 
+}
+
+.nav {
+  list-style: none;
+  padding: 0; 
+  margin: 0; 
+}
+
+.nav-link {
+  color: var(--color3);
+  padding: 8px 15px; 
+  font-size: 2rem;
+  text-decoration: none; 
+}
 
 .titulo {
   font-size: 36px;
@@ -82,6 +98,52 @@ nav svg {
   border: none;
 }
 
+/* Inicio page styles */
+body {
+    background-color: #f7f7f7; 
+    color: #333; 
+    text-align: center; 
+    padding: 20px;
+}
+
+.presentacion-container {
+    max-width: 800px;
+    margin: 0 auto; 
+    padding: 40px;
+    background-color: white; 
+    border-radius: 15px; 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+}
+
+h1 {
+    color: var(--color2); 
+    font-size: 2.5em;
+    margin-top: 3rem;
+    margin-bottom: 5px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    border-bottom: 3px solid var(--color3);
+    padding-bottom: 10px;
+    display: inline-block; 
+}
+
+h2 {
+    color: var(--color3); 
+    font-size: 1.5em;
+    font-style: italic;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+p {
+    color: #000; ;
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    text-align: center; 
+    padding: 0 20px; 
+}
+
+
 /* Pokemones styles */
 
 .pokemon-container {
@@ -129,7 +191,7 @@ nav svg {
   width: 50%;
 }
 
-/* Detalle styles */
+/* Pokemon Card styles */
 .modal-container {
   background-color: rgba(0, 0, 0, 0.5);
   position: fixed;
@@ -217,3 +279,26 @@ nav svg {
   place-items: center;
 }
 
+/* Cargando styles */
+
+.cargando {
+  border: 5px solid #e2e2e2;
+  border-top-color: #26e;
+  border-right-color: #26e;
+  border-radius: 50%;
+  height: 1.5rem;
+  width: 1.5rem;
+  animation: spiner 1s linear infinite;
+  grid-column: 1 / 6;
+  margin: 0 auto;
+}
+
+@keyframes spiner {
+0%{
+  transform: rotate(0deg);
+}
+
+100% {
+  transform: rotate(360deg);
+}
+}
