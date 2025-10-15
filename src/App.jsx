@@ -1,24 +1,22 @@
 import './App.css'
 import './index.css'
-import { Routes, Route, BrowserRouter } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Inicio from './Pages/Inicio';
 import Pokemon from './Pages/Pokemon';
-import Buscar from './Pages/Buscar';
-
+import DetallePokemon from './Componentes/DetallePokemon';
 
 function App() {
 
   return (
     <>
       <div >
-        <BrowserRouter>
+        <Router>
           <Routes>
             <Route path='/' element={<Inicio />} />
             <Route path='/Inicio' element={<Inicio />} />
             <Route path='/Pokemones' element={<Pokemon />} />
-            <Route path='/Buscar' element={<Buscar />} />
           </Routes>
-        </BrowserRouter>
+        </Router>
       </div>
     </>
   )

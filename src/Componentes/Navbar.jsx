@@ -5,21 +5,18 @@ const Navbar = () => {
 
     return (
         <nav>
-           <Logo />
-           <ul class="nav justify-content-end">
-                <li class="nav-item">
-                    <a class="nav-link" href="Inicio">Inicio</a>
+            <Logo />
+            <ul className="nav justify-content-end">
+                <li className="nav-item">
+                    <a className="nav-link" href="Inicio">Inicio</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="Pokemones">Pokemones</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="Buscar">Buscar</a>
+                <li className="nav-item">
+                    <a className="nav-link" href="Pokemones">Pokemones</a>
                 </li>
             </ul>
         </nav>
-        )
-    }
-    
+    )
+}
+
 export default Navbar
 

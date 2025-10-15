@@ -1,7 +1,8 @@
 import '../App.css'
+import { useLocation } from 'react-router-dom'
 
-function DetallePokemon({mostrar, pokemon, cerrar}) {
-  
+function DetallePokemon({ mostrar, pokemon, cerrar }) {
+
   return (
     <div className="modal-container" onClick={cerrar} style={{ display: mostrar ? 'grid' : 'none' }}>
       <section className="modal-body">
@@ -26,11 +27,27 @@ function DetallePokemon({mostrar, pokemon, cerrar}) {
               </section>
             )}
           </div>
-          
         </div>
       </section>
     </div>
   )
 }
 
-export default DetallePokemon
+function DetallePokemonCard() {
+  const location = useLocation();
+  const { nombre, imagen, tipos, altura, peso } = location.state || {};
+
+  if (!nombre) return <div>No hay datos del Pokémon.</div>;
+
+  return (
+    <div>
+      <h2>{nombre}</h2>
+      <img src={imagen} alt={nombre} />
+      <p>Tipos: {tipos && tipos.join(', ')}</p>
+      <p>Altura: {altura}</p>
+      <p>Peso: {peso}</p>
+    </div>
+  );
+}
+
+export default DetallePokemon; DetallePokemonCard

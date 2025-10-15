@@ -1,70 +1,91 @@
 🌈 Bienvenidos a mi Trabajo Final del curso de Front-End.
 
-Este proyecto es el resultado de todo el conocimiento y las habilidades que he adquirido en los últimos meses, espero este a la altura de los esperado para el final de presente curso. 
+Este proyecto es el resultado del conocimiento y las habilidades que he adquirido en los últimos meses. 
 
 💻 Pokédex 
-Intente crear una web, que cumpla la funcion de Pokédex que permite investigar y conocer información sobre los Pokemon.
 
-💽 El proyecto incluye :
- * React 
- * Vite 
- * React Router DOM 
- * PokéAPI 
+Es una aplicación web interactiva desarrollada con React que simula una Pokédex, permitiendo a los usuarios visualizar y explorar información detallada sobre diferentes Pokémon. 
+
+La aplicación tiene como objetivo principal ser una Pokédex funcional que cumple con los siguientes puntos:
+
+Un inicio con una presentacion.
+
+Un listado de Pokémons que muestra una cuadrículacon los Pokémon obtenidos de la PokeAPI.
+
+La navegación permite moverse entre la lista principal y la vista de detalle de cada Pokémon por medio de un boton.
+Y al buscarlos en el buscador se abre una pantalla con otra informacion diferente.
+
+🚀 Tecnologías y Herramientas
+Las tecnologías clave utilizadas en el desarrollo de este proyecto son:
+
+⚛️ React: Biblioteca principal para la construcción de la interfaz de usuario.
+
+🧭 React Router DOM: Para gestionar el enrutamiento y la navegación entre las diferentes vistas (Home, Lista, Detalle).
+
+⚡ Vite: Bundler rápido para la configuración inicial y el desarrollo.
+
+📡 PokeAPI: La fuente de datos principal para obtener la información de los Pokémon.
 
 📝 Instrucciones de Instalación y Ejecución
-Estas instrucciones detallan cómo configurar y levantar el proyecto de la Pokedex en tu entorno local.
+Estas instrucciones te guiarán para clonar el proyecto y ponerlo en marcha en tu entorno de desarrollo local.
 
-🔨Prerrequisitos
-    Asegúrate de tener instaladas las siguientes herramientas en tu sistema:
+🔨 Prerrequisitos
+Asegúrate de tener instalados:
 
-        🔧Node.js (Versión LTS recomendada)
-        🔧npm (Gestor de paquetes de Node.js)
+🔧 Node.js (Versión LTS recomendada).
 
-📥Pasos de Instalación
-    Clonar el Repositorio 💾
-    Abre tu terminal o línea de comandos y ejecuta los siguientes comandos para descargar el proyecto y navegar a su directorio:
+🔧 npm o yarn (Gestor de paquetes de Node.js).
 
-Bash
+🔧 Git.
 
-git clone https://github.com/Sofiailin/tp-final-react-sofia-fraga.git
+📥 Pasos de Instalación
+Clonar el Repositorio 💾: Abre tu terminal y ejecuta el siguiente comando:
+
+- git clone https://github.com/Sofiailin/tp-final-react-sofia-fraga.git
+
+- git pull (para traer lo que hay en el repositorio)
+
+Luego hay que abrir un nuevo terminal y ejecutar los comandos:
+
+- npm install (o si usas yarn -> yarn install)
+
+(Nota: La dependencia react-router-dom se instalará con el npm install inicial si está correctamente listada en el package.json. No es necesario listarla dos veces en los pasos.
+En el caso que no se haya instalado debera ejecutar el comando - npm install react-router-dom)
+
+- npm run dev (o si usas yarn -> yarn dev)
+
+Esto debera generar un link para acceder al Local Host
+
+Abrir en el Navegador: La aplicación se iniciará y estará accesible en la URL que indique la consola (generalmente http://localhost:5173/).
 
 
-Instalar las Dependencias en una nueva terminal, ejecutando los codigos:
+⚙️ Estructura y Vistas del Proyecto
+El proyecto está organizado de la siguiente manera, reflejando las funcionalidades requeridas:
 
-- npm install
-(Nota: La dependencia react-router-dom se instalará con el npm install inicial si está correctamente listada en el package.json. No es necesario listarla dos veces en los pasos.)
+📁 Estructura Principal
+src/
+├── components/
+│   ├── Buscador.jsx          
+│   ├── Cargando.jsx        
+│   ├── DetallePokemon.jsx    
+│   ├── Icons.jsx   
+│   ├── Navbar.jsx 
+│   └──Pokemones.jsx   
+├── Hooks/
+│   └── usePokemones.js 
+├── Img/   
+├── Pages/ 
+│   ├──Inicio.jsx 
+│   └──Pokemon.jsx                 
+├── App.css    
+├── App.jsx               
+├── index.css            
+├── App.jsx               
+└── main.jsx
 
+👨‍💻 Autora - Sofia Ailin Fraga 
 
-Para iniciar el servidor de desarrollo y ejecutar la aplicación en tu navegador:
+📅 2025 – Diplomatura en Desarrollo Web Full Stack (UTN BA)
 
-Ejecuta el comando
-- npm run dev
-
-La aplicación estará disponible y se podrá acceder desde tu navegador en la siguiente dirección:
-
-http://localhost:5173/
-
-
--------------------------------------------
-
-🏠 Home (Página Informativa)
-Debe explicar de qué trata el proyecto y su propósito.
-Puede incluir texto, imágenes, estilos o secciones adicionales a criterio del alumno.
-2. 📜 Listado de Pokemons
-Debe consumir datos desde la PokeAPI (`https://pokeapi.co/api/v2/pokemon\`) y renderizar un listado de pokemons.
-El listado puede mostrarse en forma de cards o lista, con al menos el nombre e imagen de cada Pokémon.
-Cada card debe ser clickeable: al hacer clic debe redirigir a la pantalla de detalle correspondiente.
-3. 🔎 Detalle del Pokémon
-Debe recibir un ID o nombre en la URL y mostrar información más detallada del Pokémon seleccionado (por ejemplo: nombre, tipo, habilidades, peso, altura, imagen, etc.).
-Esta página se debe poder abrir tanto:
-Haciendo clic en una card del listado.
-Ingresando directamente la URL correspondiente
-
-npm i
-
-npm react
-
-npm install react-bootstrap bootstrap
-
-npm install react-router-dom
-
+🧾 Licencia
+Este proyecto se distribuye con fines puramente educativos como parte de la evaluación final del curso de Front End.

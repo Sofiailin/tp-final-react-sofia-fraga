@@ -6,7 +6,7 @@ function Inicio() {
   return (
     <>
       <Navbar />
-      <h1>¡Bienvenid@ a la Pokédex de la Dra. Sofi!</h1>
+      <h1>¡Bienvenid@ a la Pokédex de la Profesora Sofi!</h1>
       <h2>El mundo está lleno de maravillas, ¡y cada una tiene un nombre!</h2>
       <p>Entra al corazón de nuestra Pokédex y únete a la misión de conocer más a estas increíbles criaturas.</p>
       <p> Ya seas un Entrenador experimentado buscando la habilidad perfecta,
